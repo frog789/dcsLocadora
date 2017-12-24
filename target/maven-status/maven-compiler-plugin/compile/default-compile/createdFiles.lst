@@ -1,0 +1,6 @@
+com\dsclocadora\entities\Categoria.class
+com\dsclocadora\entities\Genero.class
+com\dsclocadora\entities\Usuario.class
+com\dsclocadora\entities\Idioma.class
+com\dsclocadora\entities\Jogo.class
+com\dsclocadora\entities\FaixaEtariaEnum.class
