@@ -33,7 +33,7 @@ public class t01_Jogos extends Testes {
     public void setUp() throws NamingException {
         jogoService = (JogoService) container.getContext().lookup("java:global/classes/ejb/JogoService!com.dscloadora.services.JogoService");
         idiomaService = (IdiomaService) container.getContext().lookup("java:global/classes/ejb/IdiomaService!com.dscloadora.services.IdiomaService");
-        produtoraService = (ProdutoraService) container.getContext().lookup("java:global/classes/ejb/IdiomaService!com.dscloadora.services.ProdutoraService");
+        produtoraService = (ProdutoraService) container.getContext().lookup("java:global/classes/ejb/ProdutoraService!com.dscloadora.services.ProdutoraService");
     }
     
     @After

@@ -1,11 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: t01_Jogos
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.478 sec <<< FAILURE!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 929.292 sec <<< FAILURE!
 t01_Jogos  Time elapsed: 0 sec  <<< ERROR!
-javax.ejb.EJBException: No EJBContainer provider available: no provider names had been found.
-	at javax.ejb.embeddable.EJBContainer.reportError(EJBContainer.java:216)
-	at javax.ejb.embeddable.EJBContainer.createEJBContainer(EJBContainer.java:146)
+javax.ejb.EJBException: Failed to deploy EJB modules - see log for details
+	at org.glassfish.ejb.embedded.EJBContainerImpl.deploy(EJBContainerImpl.java:150)
+	at org.glassfish.ejb.embedded.EJBContainerProviderImpl.createEJBContainer(EJBContainerProviderImpl.java:134)
+	at javax.ejb.embeddable.EJBContainer.createEJBContainer(EJBContainer.java:127)
 	at javax.ejb.embeddable.EJBContainer.createEJBContainer(EJBContainer.java:102)
 	at Testes.setUpClass(Testes.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

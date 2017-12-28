@@ -99,6 +99,14 @@
             <version>2.5.3</version>
             <scope>test</scope>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.glassfish.extras/glassfish-embedded-all -->
+        <dependency>
+            <groupId>org.glassfish.extras</groupId>
+            <artifactId>glassfish-embedded-all</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
 
         <dependency>
             <groupId>javax.el</groupId>
