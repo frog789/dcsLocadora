@@ -6,10 +6,27 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.validation.constraints.NotNull;
 
 @Entity(name = "TB_PRODUTORA")
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Produtora.PRODUTORA_POR_NOME,
+                    query = "SELECT i FROM Produtora i WHERE i.nome_produtora like ?1"
+            ),
+                @NamedQuery(
+                    name = Produtora.PRODUTORA_POR_ID,
+                    query = "SELECT i FROM Produtora i WHERE i.id like ?1"
+            )
+        }
+)
 public class Produtora implements Serializable {
+    
+    public static final String PRODUTORA_POR_NOME = "ProdutoraPorNomeIdioma";
+    public static final String PRODUTORA_POR_ID = "ProdutoraPorId";
 
     private static final long serialVersionUID = 1L;
     

@@ -20,20 +20,34 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.br.CPF;
-
-import com.dsclocadora.entities.Categoria;
 
 @Entity
-@Table(name = "TB_Jogo")
+@Table(name = "TB_JOGO")
+@NamedQueries(
+        {
+            @NamedQuery(
+                    name = Jogo.ITEM_POR_CATEGORIA,
+                    query = "SELECT i FROM Jogo i, Categoria c WHERE c.nome like ?1 AND c MEMBER OF i.categorias"
+            ),
+            @NamedQuery(
+                    name = Jogo.ITEM_POR_TITULO,
+                    query = "SELECT i FROM Jogo i WHERE i.titulo like ?1"
+            )
+        }
+)
 public class Jogo implements Serializable {
+    
+    public static final String ITEM_POR_CATEGORIA = "ItemPorCategoria";
+    public static final String ITEM_POR_TITULO = "ItemPorTitulo";
 
     private static final long serialVersionUID = 1L;
 
@@ -45,16 +59,16 @@ public class Jogo implements Serializable {
     @Column(name = "titulo", length = 60, nullable = false)
     private String titulo;
 
-    @NotBlank
-    @Column(name = "quantidade_disponivel", length = 60, nullable = false)
+    @NotNull
+    @Column(name = "quantidade_disponivel", length = 60)
     private int qtdDisponivel;
 
     @NotBlank
     @Column(name = "quantidade_jogadores", length = 60, nullable = false)
     private int qtdJogadores;
 
-    @NotBlank
-    @Column(name = "tam_jogo", length = 60, nullable = false)
+    @NotNull
+    @Column(name = "tam_jogo", length = 60)
     private Double tamanhoGB;
 
     @NotBlank
@@ -88,7 +102,7 @@ public class Jogo implements Serializable {
         @JoinColumn(name = "ID_GAME")},
             inverseJoinColumns = {
                 @JoinColumn(name = "ID_CATEGORIA")})
-    private List<Jogo> categorias;
+    private List<Categoria> categorias;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "data_lancamento")
@@ -105,8 +119,8 @@ public class Jogo implements Serializable {
     public Long getId() {
         return id;
     }
-    
-    public void setId(Long id){
+
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -182,11 +196,11 @@ public class Jogo implements Serializable {
         this.produtora = produtora;
     }
 
-    public List<Jogo> getCategorias() {
+    public List<Categoria> getCategorias() {
         return categorias;
     }
 
-    public void setCategorias(List<Jogo> categorias) {
+    public void setCategorias(List<Categoria> categorias) {
         this.categorias = categorias;
     }
 

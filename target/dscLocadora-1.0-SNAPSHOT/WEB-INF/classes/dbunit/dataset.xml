@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<TB_IDIOMA id="1" nome_idioma="Português" />
+        <TB_IDIOMA id="2" nome_idioma="Inglês" />
+        <TB_IDIOMA id="3" nome_idioma="Frânces" />
+        <TB_IDIOMA id="4" nome_idioma="Espanhol" />
+        <TB_IDIOMA id="5" nome_idioma="Alemão" />
+        <TB_IDIOMA id="6" nome_idioma="Latim" />
+        <TB_IDIOMA id="7" nome_idioma="Japonês" />
+        <TB_IDIOMA id="8" nome_idioma="Chinês" />
+        <TB_IDIOMA id="9" nome_idioma="Arabe" />
+        <TB_IDIOMA id="10" nome_idioma="Egipcio" />
+        <TB_IDIOMA id="11" nome_idioma="Mandarim" />
+        <TB_IDIOMA id="12" nome_idioma="Hindi" />
+        <TB_IDIOMA id="13" nome_idioma="Russo" />
+        <TB_IDIOMA id="14" nome_idioma="Galês" />
+        <TB_IDIOMA id="15" nome_idioma="Bretão" />
+        <TB_IDIOMA id="16" nome_idioma="Tcheco" />
+        <TB_IDIOMA id="17" nome_idioma="Polonês" />
+        <TB_IDIOMA id="18" nome_idioma="Eslavo" />
+        <TB_IDIOMA id="19" nome_idioma="Acadiano" />
+        <TB_IDIOMA id="20" nome_idioma="Hebraico" />
+        
+        <TB_PRODUTORA id="1" nome_produtora="CAPCOM" />
+        <TB_PRODUTORA id="2" nome_produtora="THQ Nordic" />
+        <TB_PRODUTORA id="3" nome_produtora="SquareEnix" />
+        <TB_PRODUTORA id="4" nome_produtora="Konami" />
+        <TB_PRODUTORA id="5" nome_produtora="Ubisoft" />
+        <TB_PRODUTORA id="6" nome_produtora="SEGA" />
+        <TB_PRODUTORA id="7" nome_produtora="Eletronic Arts" />
+        <TB_PRODUTORA id="8" nome_produtora="Activision Blizzard" />
+        <TB_PRODUTORA id="9" nome_produtora="Microsoft Game Studio" />
+        <TB_PRODUTORA id="10" nome_produtora="Bungie" />
+        <TB_PRODUTORA id="11" nome_produtora="Bethesda Game Studio" />
+        <TB_PRODUTORA id="12" nome_produtora="Bandai Namco Games" />
+        <TB_PRODUTORA id="13" nome_produtora="Take two Interactive" />
+        <TB_PRODUTORA id="14" nome_produtora="Rockstar Games" />
+        <TB_PRODUTORA id="15" nome_produtora="Irrational Games" />
+        <TB_PRODUTORA id="16" nome_produtora="2K Games" />
+        <TB_PRODUTORA id="17" nome_produtora="Riot Games" />
+        <TB_PRODUTORA id="18" nome_produtora="Valve" />
+        <TB_PRODUTORA id="19" nome_produtora="Sony Computer Entertainment" />
+        <TB_PRODUTORA id="20" nome_produtora="Naughty Dog" />
+        
+        <TB_GENERO id="1" descricao="Ação" />
+        <TB_GENERO id="2" descricao="Arcade" />
+        <TB_GENERO id="3" descricao="Estratégia" />
+        <TB_GENERO id="4" descricao="RPG" />
+        <TB_GENERO id="5" descricao="Terror" />
+        <TB_GENERO id="6" descricao="Suspense" />
+        <TB_GENERO id="7" descricao="First Shooter" />
+        <TB_GENERO id="8" descricao="Third Shooter" />
+        <TB_GENERO id="9" descricao="Indie" />
+        <TB_GENERO id="10" descricao="Tabuleiro" />
+        <TB_GENERO id="11" descricao="MMO RPG" />
+        <TB_GENERO id="12" descricao="MOBA" />
+        <TB_GENERO id="13" descricao="Luta" />
+        <TB_GENERO id="14" descricao="Corrida" />
+        <TB_GENERO id="15" descricao="Simulação" />
+
+</dataset>

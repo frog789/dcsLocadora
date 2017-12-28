@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.NotBlank;
 
-@Entity(name = "TB_IDIOMA")
+@Entity(name = "TB_GENERO")
 public class Genero {
 	
 	private static final long serialVersionUID = 1L;
